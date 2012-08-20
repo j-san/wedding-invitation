@@ -6,10 +6,11 @@
   },
   "version": "0.0.1",
   "engines": {
-    "node": "0.6.x"
+    "node": "0.6.12"
   },
   "dependencies": {
-      "express": "",
-      "emailjs": ""
+      "express": "3.0.0rc3",
+      "emailjs": "0.3.2",
+      "bufferjs": "*"
   }
 }
