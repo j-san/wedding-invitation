@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="http://code.jquery.com/jquery-1.8.0.js"> </script>
+        <script src="bootstrap/js/bootstrap.js"> </script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="wedding.css" />
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Satisfy|VT323' />
+        <script>
+            $(function () {
+                $("#notice").modal();
+            });
+        </script>
+    </head>
+    <body>
+        <article class="modal hide" id="notice">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h1>Error 403 - Authentication Required</h1>
+            </div>
+            <div class="modal-body">
+                <h2>L'application a détecté un mariage:</h2>
+                <ul>
+                    <li>Après 9 ans d'Amour</li>
+                    <li>Après 3 ans de fiançaille</li>
+                    <li>Après 1 Maxine</li>
+                </ul>
+                <strong>Etes-vous sûr de vouloir l'épouser ?</strong>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-primary" data-dismiss="modal">Oui</a>
+                <a href="#" class="btn btn-danger" data-dismiss="modal">Non</a>
+            </div>
+        </article>
+        
+        <div id="content">
+            <h1>Wendy et Jonathan cliqueront sur "<strong>Oui</strong>"<br/>
+            le 27 Octobre 2012</h1>
+            <p>
+            Nous officialiserons notre union à l'Hôtel de Ville de 
+            Bruxelles.
+            </p>
+            <p>
+            La célébration du mariage aura lieu à Laeken, rue de la 
+            Grotte n° 12.
+            </p>
+            <p>
+            Nous souhaitons partager ce jour spécial avec vous. 
+            </p>
+            <form action="/subscribe" class="form-vertical" method="POST">
+                <fieldset>
+                    <legend>Confirmez votre présence</legend>
+                    <div class="control-group">
+                        <label class="control-label" for="name">Nom</label>
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" id="name" name="name"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="number">Nombre de personnes</label>
+                        <div class="controls">
+                            <input type="text" class="input-small" id="number"  name="number"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Présence</label>
+                        <div class="controls">
+                            <label class="checkbox inline">
+                                <input type="checkbox" name="hotel"/> Hôtel de Ville
+                            </label>
+                            <label class="checkbox inline">
+                                <input type="checkbox" name="reception"/> Réception
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Confirmer ma présence</button>
+                </fieldset>
+            </form>
+            <h2><a href="http://maps.google.be/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=rue+de+la+grotte&amp;aq=&amp;sll=50.87916,4.393297&amp;sspn=0.077334,0.200844&amp;ie=UTF8&amp;hq=&amp;hnear=Rue+de+la+Grotte,+1020+Bruxelles&amp;ll=50.878397,4.359714&amp;spn=0.002417,0.006276&amp;t=m&amp;z=14">
+                Rue de la Grotte, 12<br />
+                1020 Bruxelles
+            </a></h2>
+            <iframe width="583" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.be/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=rue+de+la+grotte&amp;aq=&amp;sll=50.87916,4.393297&amp;sspn=0.077334,0.200844&amp;ie=UTF8&amp;hq=&amp;hnear=Rue+de+la+Grotte,+1020+Bruxelles&amp;ll=50.878397,4.359714&amp;spn=0.002417,0.006276&amp;t=m&amp;z=14&amp;output=embed"></iframe>
+            
+            <h2><a href="http://maps.google.be/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=Hotel+de+ville+de+Bruxelles,+Bruxelles&amp;aq=1&amp;oq=h%C3%B4tel+de+ville+&amp;sll=50.846563,4.351991&amp;sspn=0.019347,0.050211&amp;ie=UTF8&amp;hq=Hotel+de+ville+de+Bruxelles,+Bruxelles&amp;ll=50.846563,4.351991&amp;spn=0.01409,0.032015&amp;t=m">
+                Hôtel de ville de Bruxelles <br />
+                Grand-Place, 1<br />
+                1000 Bruxelles
+            </a></h2>
+        </div>
+    </body>
+</html>

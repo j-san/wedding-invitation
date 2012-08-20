@@ -1,0 +1,102 @@
+
+body {
+    background: #ed8d18;
+    background: url(bg-orange3.png);
+    color: #6C241E;
+}
+a {
+    color: #6C241E;
+}
+
+#notice {
+    background: white;
+    color: black;
+}
+#notice strong {
+    display: block;
+    text-align: right;
+    font-size: 1.5em;
+    margin: 1.7em 0 0;
+}
+
+#content {
+    width: 900px;
+    margin: auto;
+    font-size: 1.5em;
+    font-family: Courier, monospace;
+    padding: 2em 150px;
+    box-sizing: border-box;
+    height: 100%;
+/*
+    background: #F2DC85;
+*/
+    background-image: url(bg-content.png);
+    background-repeat:repeat-y;
+/*
+    background: -moz-linear-gradient(left, rgba(242,220,133,0) 0%, rgba(242,220,133,1) 20%, rgba(242,220,133,1) 79%, rgba(242,220,133,0) 100%); / * FF3.6+ * /
+    background: -webkit-gradient(linear, left, right, color-stop(0%,rgba(242,220,133,0)), color-stop(14%,rgba(242,220,133,1)), color-stop(86%, rgba(242,220,133,1)), color-stop(100%,rgba(242,220,133,0))); / * Chrome,Safari4+ * /
+    background: -webkit-linear-gradient(left, rgba(255,241,184,0) 0%, rgba(255,241,184,1) 14%, rgba(255,241,184,1) 86%, rgba(255,241,184,0) 100%); /* Chrome10+,Safari5.1+ * /
+    background: -o-linear-gradient(left, rgba(242,220,133,0) 0%,rgba(242,220,133,1) 14%,rgba(242,220,133,1) 86%,rgba(242,220,133,0) 100%); / * Opera 11.10+ * /
+    background: -ms-linear-gradient(left, rgba(242,220,133,0) 0%,rgba(242,220,133,1) 14%,rgba(242,220,133,1) 86%,rgba(242,220,133,0) 100%); / * IE10+ * /
+    background: linear-gradient(to right, rgba(242,220,133,0) 0%,rgba(242,220,133,1) 14%,rgba(242,220,133,1) 86%,rgba(242,220,133,0) 100%); / * W3C * /
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed8d18', endColorstr='#F2DC85',GradientType=0 ); /* IE6-9 * /
+*/
+}
+
+#content h1 {
+    text-align: center;
+    margin: 2em 0;
+    font-family: 'VT323', cursive;
+    font-style:  normal;
+    font-weight: 400;
+    border-bottom: 1px solid #ed8d18;
+    padding-bottom: 36px;
+}
+/*
+#content h1 + hr {
+    text-align: center;
+    margin-bottom: 36px;
+}
+*/
+#content h1 strong {
+    color: #ed8d18;
+}
+
+#content h2 {
+    margin: 1em 0 .3em;
+    font-size: 1.1em;
+}
+
+
+#content fieldset {
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+#content legend {
+    color: #6C241E;
+    border-color: #ed8d18;
+}
+
+#content p {
+    line-height: 1.3em;
+    margin: 1.8em 0;
+    font-style: italic;
+    font-family: 'Satisfy', cursive;
+}
+
+form {
+    margin-top: 30px;
+}
+
+select,
+textarea, 
+input {
+    border-color: #ed8d18 !important;
+}
+select,
+textarea, 
+input,
+button {
+    font-family: Courier, monospace !important;
+}
+
